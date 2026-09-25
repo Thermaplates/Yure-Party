@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -28,6 +28,8 @@
       <div class="nav-menu" id="nav-menu">
         <ul class="nav-links">
           <li><a href="#news" class="nav-link">News</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#heroes" class="nav-link">Heroes</a></li>
           <li><a href="#community" class="nav-link">Community</a></li>
           <li><a href="#coupon" class="nav-link">Log</a></li>
           <li><a href="#stream" class="nav-link">Steam</a></li>
@@ -98,7 +100,7 @@
         <!-- News Card 1 -->
         <article class="news-card">
           <div class="card-thumb-wrap">
-            <img src="assets/images/gallery_cg1.jpg" alt="Update Announcement" class="card-thumb" />
+            <img src="assets/images/gallery_cg1.jpg" alt="Update Announcement" class="card-thumb" loading="lazy" decoding="async" />
             <span class="card-badge badge-update">UPDATE</span>
           </div>
           <div class="card-body">
@@ -118,7 +120,7 @@
         <!-- News Card 2 -->
         <article class="news-card">
           <div class="card-thumb-wrap">
-            <img src="assets/images/bg_night.png" alt="Special Event" class="card-thumb" />
+            <img src="assets/images/bg_night.png" alt="Special Event" class="card-thumb" loading="lazy" decoding="async" />
             <span class="card-badge badge-event">UPDATE</span>
           </div>
           <div class="card-body">
@@ -138,7 +140,7 @@
         <!-- News Card 3 -->
         <article class="news-card">
           <div class="card-thumb-wrap">
-            <img src="assets/images/bg_universe.png" alt="Community Notice" class="card-thumb" />
+            <img src="assets/images/bg_universe.png" alt="Community Notice" class="card-thumb" loading="lazy" decoding="async" />
             <span class="card-badge badge-notice">UPDATE</span>
           </div>
           <div class="card-body">
@@ -170,7 +172,7 @@
   <section class="characters-parallax-section" id="characters-showcase">
     <!-- Background Parallax Layer -->
     <div class="parallax-bg-layer" id="parallaxBgLayer">
-      <img src="assets/img/parralax.png" alt="Scenic Background" class="parallax-bg-img" id="parallaxBgImg" />
+      <img src="assets/img/parralax.png" alt="Scenic Background" class="parallax-bg-img" id="parallaxBgImg" loading="lazy" decoding="async" />
     </div>
 
     <!-- Soft Atmospheric Ambient Glow -->
@@ -183,7 +185,7 @@
       <div class="parallax-group-layer" id="parallaxGroupLayer">
         <div class="characters-stage" id="charactersStage">
           <div class="characters-ground-shadow"></div>
-          <img src="assets/img/grop.png" alt="Yure Party Characters" class="characters-group-img" id="charactersGroupImg" />
+          <img src="assets/img/grop.png" alt="Yure Party Characters" class="characters-group-img" id="charactersGroupImg" loading="lazy" decoding="async" />
         </div>
       </div>
     </div>
@@ -198,7 +200,7 @@
         <span class="features-eyebrow">A NEW STYLE OF A SPOOKY RPG</span>
         <h2 class="features-main-title">ADVENTURE</h2>
         <p class="features-subtitle-desc">
-          A link to the past! Relive your greatest adventures with Yure Party! From solving challenging puzzles in haunted manors to strategic action combat, embark on this legendary journey to save the cute spirit world!
+          Petualangan Nia  dan teman temannya di dunia roh 
         </p>
       </div>
 
@@ -206,147 +208,149 @@
       <div class="carousel-wrapper">
         <!-- Navigation Prev Button -->
         <button class="carousel-arrow arrow-prev" id="carouselPrev" aria-label="Previous Slide">
-          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="15 18 9 12 15 6"></polyline>
           </svg>
         </button>
 
         <!-- Carousel Slides Viewport -->
         <div class="carousel-viewport" id="carouselViewport">
+          <div class="carousel-track" id="carouselTrack">
 
-          <!-- Slide 1: Weapons & Karso Shop -->
-          <div class="carousel-slide active" data-slide="0">
-            <div class="slide-grid">
-              <div class="slide-media">
-                <div class="media-box">
-                  <img src="assets/images/gallery_cg1.jpg" alt="Collect and Enhance Weapons" class="media-img" />
-                  <div class="media-badge-tag">
-                    <span class="tag-dot"></span>
-                    <span>SHOP & FORGE</span>
+            <!-- Slide 0: Weapons & Karso Shop -->
+            <div class="carousel-slide" data-slide="0">
+              <div class="slide-grid">
+                <div class="slide-media">
+                  <div class="media-box">
+                    <img src="assets/images/gallery_cg1.jpg" alt="Collect and Enhance Weapons" class="media-img" loading="lazy" decoding="async" />
+                    <div class="media-badge-tag">
+                      <span class="tag-dot"></span>
+                      <span>A NEW MECHANIC TURN BASE</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide-info">
+                  <h3 class="slide-title">A NEW MECHANIC TURN BASE</h3>
+                  <p class="slide-desc">
+                    Turn based Combat with Combo skills
+                  </p>
+                  <div class="slide-chibi-art">
+                    <img src="assets/images/chara_karso.png" alt="Mbah Karso" class="chibi-img chibi-1" loading="lazy" decoding="async" />
+                    <img src="assets/images/chara_nia.png" alt="Nia" class="chibi-img chibi-2" loading="lazy" decoding="async" />
                   </div>
                 </div>
               </div>
-              <div class="slide-info">
-                <h3 class="slide-title">COLLECT AND ENHANCE WEAPONS</h3>
-                <p class="slide-desc">
-                  It's dangerous to go alone! Collect and choose from over 100 different weapons, magical accessories, and artifacts at Mbah Karso's Shop — each with their own unique abilities and elemental powers!
-                </p>
-                <div class="slide-chibi-art">
-                  <img src="assets/images/face_karso.png" alt="Mbah Karso" class="chibi-img chibi-1" />
-                  <img src="assets/images/chara_nia.png" alt="Nia" class="chibi-img chibi-2" />
-                </div>
-              </div>
             </div>
-          </div>
 
-          <!-- Slide 2: Strategic Combat -->
-          <div class="carousel-slide" data-slide="1">
-            <div class="slide-grid">
-              <div class="slide-media">
-                <div class="media-box">
-                  <video class="media-video" autoplay loop muted playsinline preload="auto">
-                    <source src="assets/videos/battle.webm" type="video/webm" />
-                    <source src="assets/videos/header video.mp4" type="video/mp4" />
-                  </video>
-                  <div class="media-badge-tag">
-                    <span class="tag-dot"></span>
-                    <span>LIVE COMBAT</span>
+            <!-- Slide 1: Strategic Combat -->
+            <div class="carousel-slide" data-slide="1">
+              <div class="slide-grid">
+                <div class="slide-media">
+                  <div class="media-box">
+                    <video class="media-video" loop muted playsinline preload="none">
+                      <source src="assets/videos/battle.webm" type="video/webm" />
+                      <source src="assets/videos/header video.mp4" type="video/mp4" />
+                    </video>
+                    <div class="media-badge-tag">
+                      <span class="tag-dot"></span>
+                      <span>A NEW MECHANIC: CONSTELLATION</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide-info">
+                  <h3 class="slide-title">STRATEGIC TURN BASE</h3>
+                  <p class="slide-desc">
+                    Merge Skill in CONSTELLATION, Combine the power of your Character and unlock new Combo!
+                  </p>
+                  <div class="slide-chibi-art">
+                    <img src="assets/images/chara_sophia.png" alt="Sophia" class="chibi-img chibi-1" loading="lazy" decoding="async" />
+                    <img src="assets/images/chara_saki.png" alt="Saki" class="chibi-img chibi-2" loading="lazy" decoding="async" />
                   </div>
                 </div>
               </div>
-              <div class="slide-info">
-                <h3 class="slide-title">STRATEGIC ACTION COMBAT</h3>
-                <p class="slide-desc">
-                  Dodge, dash, and unleash devastating team combos! Coordinate attacks between characters, exploit enemy elemental weaknesses, and execute chain skills to turn the tide of difficult battles!
-                </p>
-                <div class="slide-chibi-art">
-                  <img src="assets/images/chara_sophia.png" alt="Sophia" class="chibi-img chibi-1" />
-                  <img src="assets/images/chara_saki.png" alt="Saki" class="chibi-img chibi-2" />
-                </div>
-              </div>
             </div>
-          </div>
 
-          <!-- Slide 3: Dungeon Puzzles -->
-          <div class="carousel-slide" data-slide="2">
-            <div class="slide-grid">
-              <div class="slide-media">
-                <div class="media-box">
-                  <img src="assets/images/bg_castle.png" alt="Challenging Puzzles" class="media-img" />
-                  <div class="media-badge-tag">
-                    <span class="tag-dot"></span>
-                    <span>DUNGEON EXPEDITION</span>
+            <!-- Slide 2: Dungeon Puzzles -->
+            <div class="carousel-slide" data-slide="2">
+              <div class="slide-grid">
+                <div class="slide-media">
+                  <div class="media-box">
+                    <img src="assets/images/bg_castle.png" alt="Challenging Puzzles" class="media-img" loading="lazy" decoding="async" />
+                    <div class="media-badge-tag">
+                      <span class="tag-dot"></span>
+                      <span>LIMBO EXPEDITION</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide-info">
+                  <h3 class="slide-title">CHALLENGING LIMBO</h3>
+                  <p class="slide-desc">
+                  Explore Limbo with your team, overcome obstacles, and defeat powerful bosses
+                  </p>
+                  <div class="slide-chibi-art">
+                    <img src="assets/images/chara_saki.png" alt="Saki" class="chibi-img chibi-1" loading="lazy" decoding="async" />
+                    <img src="assets/img/Ambatong.png" alt="Ambatong" class="chibi-img chibi-2" loading="lazy" decoding="async" />
                   </div>
                 </div>
               </div>
-              <div class="slide-info">
-                <h3 class="slide-title">CHALLENGING DUNGEON PUZZLES</h3>
-                <p class="slide-desc">
-                  Lift boulders, activate hidden pressure switches, throw explosive bombs, and uncover secret pathways through labyrinthine castles and mysterious haunted chambers filled with surprises!
-                </p>
-                <div class="slide-chibi-art">
-                  <img src="assets/images/face_saki.png" alt="Saki" class="chibi-img chibi-1" />
-                  <img src="assets/img/Ambatong.png" alt="Ambatong" class="chibi-img chibi-2" />
-                </div>
-              </div>
             </div>
-          </div>
 
-          <!-- Slide 4: Yuri Story & Bonding -->
-          <div class="carousel-slide" data-slide="3">
-            <div class="slide-grid">
-              <div class="slide-media">
-                <div class="media-box">
-                  <img src="assets/images/bg_crystal.png" alt="Heartwarming Yuri Bonds" class="media-img" />
-                  <div class="media-badge-tag">
-                    <span class="tag-dot"></span>
-                    <span>STORY & BONDS</span>
+            <!-- Slide 3: Yuri Story & Bonding -->
+            <div class="carousel-slide" data-slide="3">
+              <div class="slide-grid">
+                <div class="slide-media">
+                  <div class="media-box">
+                    <img src="assets/images/bg_crystal.png" alt="Heartwarming Yuri Bonds" class="media-img" loading="lazy" decoding="async" />
+                    <div class="media-badge-tag">
+                      <span class="tag-dot"></span>
+                      <span>STORY & BONDS</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide-info">
+                  <h3 class="slide-title">IMMERSIVE YURI STORYLINE</h3>
+                  <p class="slide-desc">
+                    Deepen the bonds of friendship and love between your charming heroines. Unlock heartfelt side stories, custom voice dialogues, and special bond interactions as you journey together!
+                  </p>
+                  <div class="slide-chibi-art">
+                    <img src="assets/images/chara_nia.png" alt="Nia" class="chibi-img chibi-1" loading="lazy" decoding="async" />
+                    <img src="assets/images/chara_sophia.png" alt="Sophia" class="chibi-img chibi-2" loading="lazy" decoding="async" />
                   </div>
                 </div>
               </div>
-              <div class="slide-info">
-                <h3 class="slide-title">IMMERSIVE YURI STORYLINE</h3>
-                <p class="slide-desc">
-                  Deepen the bonds of friendship and love between your charming heroines. Unlock heartfelt side stories, custom voice dialogues, and special bond interactions as you journey together!
-                </p>
-                <div class="slide-chibi-art">
-                  <img src="assets/images/face_nia.png" alt="Nia" class="chibi-img chibi-1" />
-                  <img src="assets/images/face_sophia.png" alt="Sophia" class="chibi-img chibi-2" />
-                </div>
-              </div>
             </div>
-          </div>
 
-          <!-- Slide 5: Phantom Boss Battles -->
-          <div class="carousel-slide" data-slide="4">
-            <div class="slide-grid">
-              <div class="slide-media">
-                <div class="media-box">
-                  <img src="assets/images/bg_night.png" alt="Epic Phantom Bosses" class="media-img" />
-                  <div class="media-badge-tag">
-                    <span class="tag-dot"></span>
-                    <span>BOSS RAIDS</span>
+            <!-- Slide 4: Phantom Boss Battles -->
+            <div class="carousel-slide" data-slide="4">
+              <div class="slide-grid">
+                <div class="slide-media">
+                  <div class="media-box">
+                    <img src="assets/images/bg_night.png" alt="Epic Phantom Bosses" class="media-img" loading="lazy" decoding="async" />
+                    <div class="media-badge-tag">
+                      <span class="tag-dot"></span>
+                      <span>BOSS SECRET</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide-info">
+                  <h3 class="slide-title">BOSS SECRET</h3>
+                  <p class="slide-desc">
+                  Secret Location where all enemies are super strong, but the rewards are even better!
+                  </p>
+                  <div class="slide-chibi-art">
+                    <img src="assets/img/Happy.png" alt="Happy Ghost" class="chibi-img chibi-1" loading="lazy" decoding="async" />
+                    <img src="assets/img/John 1 (2).png" alt="John" class="chibi-img chibi-2" loading="lazy" decoding="async" />
                   </div>
                 </div>
               </div>
-              <div class="slide-info">
-                <h3 class="slide-title">COLOSSAL PHANTOM BOSSES</h3>
-                <p class="slide-desc">
-                  Test your skills against massive multi-phase bosses that command terrifying spirit abilities! Master their attack patterns, time your dodges, and claim legendary rewards!
-                </p>
-                <div class="slide-chibi-art">
-                  <img src="assets/images/chara_karso.png" alt="Karso" class="chibi-img chibi-1" />
-                  <img src="assets/img/Happy.png" alt="Happy Ghost" class="chibi-img chibi-2" />
-                </div>
-              </div>
             </div>
-          </div>
 
+          </div>
         </div>
 
         <!-- Navigation Next Button -->
         <button class="carousel-arrow arrow-next" id="carouselNext" aria-label="Next Slide">
-          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
         </button>
@@ -358,21 +362,20 @@
           <div class="track-line"></div>
           
           <!-- Tab 0: Chest / Shop -->
-          <button class="carousel-tab active" data-index="0" aria-label="Shop and Weapons">
+          <button class="carousel-tab active" data-index="0" aria-label="Shop and Weapons" title="Shop and Weapons">
             <div class="tab-icon-box">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
                 <path d="m3.3 7 8.7 5 8.7-5"></path>
                 <path d="M12 22V12"></path>
               </svg>
             </div>
-            <span class="tab-label">Weapons</span>
           </button>
 
           <!-- Tab 1: Swords / Combat -->
-          <button class="carousel-tab" data-index="1" aria-label="Combat">
+          <button class="carousel-tab" data-index="1" aria-label="Combat" title="Combat">
             <div class="tab-icon-box">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"></polyline>
                 <line x1="13" y1="19" x2="19" y2="13"></line>
                 <line x1="16" y1="16" x2="20" y2="20"></line>
@@ -383,33 +386,30 @@
                 <line x1="3" y1="19" x2="5" y2="21"></line>
               </svg>
             </div>
-            <span class="tab-label">Combat</span>
           </button>
 
           <!-- Tab 2: Puzzle -->
-          <button class="carousel-tab" data-index="2" aria-label="Dungeon Puzzles">
+          <button class="carousel-tab" data-index="2" aria-label="Dungeon Puzzles" title="Dungeon Puzzles">
             <div class="tab-icon-box">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M19.439 7.85c-.049-.322-.059-.66-.059-1.008 0-3.21-2.433-5.842-5.553-5.842-2.316 0-4.307 1.454-5.143 3.525C8.077 4.195 7.42 4 6.721 4 3.01 4 0 7.087 0 10.895c0 .357.028.706.079 1.048C.028 12.285 0 12.634 0 12.991c0 3.808 3.01 6.895 6.721 6.895.699 0 1.356-.195 1.964-.525.836 2.071 2.827 3.525 5.143 3.525 3.12 0 5.553-2.632 5.553-5.842 0-.348-.01-.686-.059-1.008.314-.052.635-.081.964-.081 2.576 0 4.673-2.146 4.673-4.78 0-2.634-2.097-4.78-4.673-4.78-.329 0-.65.029-.964.081z"></path>
               </svg>
             </div>
-            <span class="tab-label">Puzzles</span>
           </button>
 
           <!-- Tab 3: Heart / Story -->
-          <button class="carousel-tab" data-index="3" aria-label="Story and Bonds">
+          <button class="carousel-tab" data-index="3" aria-label="Story and Bonds" title="Story and Bonds">
             <div class="tab-icon-box">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
               </svg>
             </div>
-            <span class="tab-label">Story</span>
           </button>
 
           <!-- Tab 4: Boss / Monster -->
-          <button class="carousel-tab" data-index="4" aria-label="Boss Battles">
+          <button class="carousel-tab" data-index="4" aria-label="Boss Battles" title="Boss Battles">
             <div class="tab-icon-box">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5z"></path>
                 <path d="M4 10a8 8 0 0 0 16 0"></path>
                 <path d="M7 21v-3"></path>
@@ -417,12 +417,131 @@
                 <path d="M12 17v4"></path>
               </svg>
             </div>
-            <span class="tab-label">Bosses</span>
           </button>
 
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- ================= SECTION 4: HEROES SHOWCASE ================= -->
+  <section class="heroes-section" id="heroes">
+    <!-- Header Title -->
+    <div class="heroes-header">
+      <span class="heroes-eyebrow">CHARACTER</span>
+      <h2 class="heroes-title">ALL CHARACTER</h2>
+      <p class="heroes-desc">
+      Character from Different Background
+      </p>
+    </div>
+
+    <!-- Main Showcase Stage -->
+    <div class="heroes-stage-container">
+      <div class="heroes-stage" id="heroStage">
+        <!-- Ambient Glowing Background Layers -->
+        <div class="hero-stage-bg" id="heroStageBg">
+          <div class="hero-bg-overlay"></div>
+          <div class="hero-wisp wisp-1"></div>
+          <div class="hero-wisp wisp-2"></div>
+          <div class="hero-wisp wisp-3"></div>
+        </div>
+
+        <!-- Left Nav Arrow with Previous Hero Mini Avatar -->
+        <button class="hero-nav-arrow prev" id="heroPrevBtn" aria-label="Previous Hero" title="Previous Hero">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          <div class="hero-mini-preview prev" id="heroMiniPrev" title="Previous Hero">
+            <img src="assets/img/John 1 (2).png" alt="Previous Hero Mini" loading="lazy" decoding="async" />
+          </div>
+        </button>
+
+        <!-- Main Hero Card Content -->
+        <div class="hero-display-content" id="heroDisplayContent">
+          <!-- Left Column: Name & Class/Archetype -->
+          <div class="hero-identity-col">
+            <h3 class="hero-name" id="heroName">NIA</h3>
+            <span class="hero-role-title" id="heroRoleTitle">GHOST MAID &amp; LEADER </span>
+          </div>
+
+          <!-- Center Column: Character Artwork -->
+          <div class="hero-art-col">
+            <div class="hero-art-glow"></div>
+            <img src="assets/images/chara_nia.png" alt="Hero Artwork" class="hero-main-art" id="heroMainArt" loading="eager" decoding="async" />
+          </div>
+
+          <!-- Right Column: Stats & Evolution Box -->
+          <div class="hero-details-col">
+            <!-- Stats Matrix -->
+            <div class="hero-stats-group">
+              <div class="hero-stat-item">
+                <span class="stat-label">ROLE</span>
+                <span class="stat-value" id="heroStatRole">MENTALIST</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="stat-label">ELEMENT/SKILL TYPE</span>
+                <span class="stat-value" id="heroStatElement"> THUNDER(ASTRAPHOBIA) - MAGIC </span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="stat-label">SPECIAL ABILITY</span>
+                <span class="stat-value" id="heroStatSpecial"></span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="stat-label">ANCHOR</span>
+                <span class="stat-value" id="heroStatWeapon">Cyclops</span>
+              </div>
+            </div>
+
+            <!-- Evolution Stage Box -->
+            <div class="hero-evolution-card">
+              <span class="evolution-label">ANCHOR</span>
+              <div class="evolution-preview-box">
+                <img src="assets/images/face_nia.png" alt="Evolution Sprite" class="evolution-sprite" id="evolutionSprite" loading="lazy" decoding="async" />
+              </div>
+              <!-- Evolution Star Controls -->
+              <div class="evolution-controls">
+                <button class="evo-btn prev" id="evoPrevBtn" aria-label="Lower Evolution Stage">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                  </svg>
+                </button>
+                <div class="evolution-stars" id="evolutionStars">
+                  <span class="evo-star active">✦</span>
+                  <span class="evo-star active">✦</span>
+                  <span class="evo-star active">✦</span>
+                  <span class="evo-star">✦</span>
+                  <span class="evo-star">✦</span>
+                </div>
+                <button class="evo-btn next" id="evoNextBtn" aria-label="Higher Evolution Stage">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Nav Arrow with Next Hero Mini Avatar -->
+        <button class="hero-nav-arrow next" id="heroNextBtn" aria-label="Next Hero" title="Next Hero">
+          <div class="hero-mini-preview next" id="heroMiniNext" title="Next Hero">
+            <img src="assets/images/chara_sophia.png" alt="Next Hero Mini" loading="lazy" decoding="async" />
+          </div>
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Bottom Pagination Indicator Dots -->
+      <div class="heroes-pagination-dots" id="heroesDots">
+        <button class="hero-dot active" data-index="0" aria-label="Hero 1"></button>
+        <button class="hero-dot" data-index="1" aria-label="Hero 2"></button>
+        <button class="hero-dot" data-index="2" aria-label="Hero 3"></button>
+        <button class="hero-dot" data-index="3" aria-label="Hero 4"></button>
+        <button class="hero-dot" data-index="4" aria-label="Hero 5"></button>
+      </div>
     </div>
   </section>
 
