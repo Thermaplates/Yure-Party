@@ -763,6 +763,294 @@ body {
 }
 
 /* ============================================================
+   FEATURES CAROUSEL SECTION (PAGE 3)
+   ============================================================ */
+.features-carousel-section {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  color: #1e293b;
+  padding: 6rem 1.5rem 5.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.features-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.features-header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 3.5rem;
+}
+
+.features-eyebrow {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: #475569;
+  text-transform: uppercase;
+  margin-bottom: 0.45rem;
+}
+
+.features-main-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4.8vw, 3.8rem);
+  font-weight: 900;
+  color: #1e293b;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.features-subtitle-desc {
+  font-size: 0.96rem;
+  line-height: 1.75;
+  color: #64748b;
+}
+
+/* Carousel Outer Wrapper */
+.carousel-wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Arrow Navigation Buttons */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 74px;
+  background: #f59e0b;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.35);
+}
+
+.carousel-arrow:hover {
+  background: #d97706;
+  transform: translateY(-50%) scale(1.06);
+  box-shadow: 0 6px 22px rgba(245, 158, 11, 0.5);
+}
+
+.arrow-prev {
+  left: -24px;
+}
+
+.arrow-next {
+  right: -24px;
+}
+
+/* Carousel Viewport */
+.carousel-viewport {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-height: 440px;
+}
+
+/* Carousel Slides */
+.carousel-slide {
+  display: none;
+  opacity: 0;
+  transform: translateX(25px);
+  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.carousel-slide.active {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+/* Left Media Box */
+.slide-media {
+  width: 100%;
+}
+
+.media-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0f172a;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.media-img,
+.media-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.media-badge-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(8px);
+  color: #f8fafc;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.tag-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 6px #22c55e;
+}
+
+/* Right Slide Content */
+.slide-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-title {
+  font-family: var(--font-sans);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1e293b;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 0.85rem;
+  line-height: 1.25;
+}
+
+.slide-desc {
+  font-size: 0.96rem;
+  color: #64748b;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+.slide-chibi-art {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.25rem;
+}
+
+.chibi-img {
+  height: 135px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.12));
+  transition: transform 0.3s ease;
+}
+
+.chibi-img:hover {
+  transform: translateY(-6px) scale(1.05);
+}
+
+/* Bottom Tab Indicator Bar */
+.carousel-tabs-container {
+  max-width: 860px;
+  margin: 1.5rem auto 0;
+  padding: 0 1rem;
+}
+
+.carousel-tabs-track {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.track-line {
+  position: absolute;
+  top: 27px;
+  left: 25px;
+  right: 25px;
+  height: 2px;
+  background: #e2e8f0;
+  z-index: 1;
+}
+
+.carousel-tab {
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #94a3b8;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tab-label {
+  position: absolute;
+  top: calc(100% + 8px);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+  white-space: nowrap;
+  transition: color 0.25s ease;
+}
+
+.carousel-tab:hover {
+  border-color: #f59e0b;
+  color: #f59e0b;
+  transform: scale(1.08);
+}
+
+.carousel-tab.active {
+  border-color: #f59e0b;
+  background: #ffffff;
+  color: #f59e0b;
+  transform: scale(1.15);
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.35);
+}
+
+.carousel-tab.active .tab-label {
+  color: #1e293b;
+  font-weight: 800;
+}
+
+/* ============================================================
    RESPONSIVE DESIGN (TABLET & MOBILE)
    ============================================================ */
 @media (max-width: 1024px) {
@@ -776,6 +1064,18 @@ body {
 
   .characters-parallax-section {
     height: 560px;
+  }
+
+  .slide-grid {
+    gap: 2.25rem;
+  }
+
+  .arrow-prev {
+    left: -10px;
+  }
+
+  .arrow-next {
+    right: -10px;
   }
 }
 
@@ -868,5 +1168,41 @@ body {
 
   .characters-group-img {
     max-height: 80%;
+  }
+
+  /* Carousel Mobile Stacking */
+  .features-carousel-section {
+    padding: 4rem 1.25rem 3.5rem;
+  }
+
+  .slide-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .carousel-arrow {
+    display: none; /* Swipe & tabs used on mobile */
+  }
+
+  .slide-title {
+    font-size: 1.35rem;
+  }
+
+  .carousel-tab {
+    width: 44px;
+    height: 44px;
+  }
+
+  .carousel-tab svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .tab-label {
+    display: none; /* Hide labels on mobile to prevent overlapping */
+  }
+
+  .chibi-img {
+    height: 105px;
   }
 }
