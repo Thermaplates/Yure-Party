@@ -285,14 +285,14 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'NIA',
       roleTitle: 'GHOST MAID & LEADER',
       mainArt: 'assets/images/chara_nia.png',
-      miniThumb: 'assets/images/face_nia.png',
+      miniThumb: 'assets/images/face_nia_thumb.png',
       role: 'MENTALIST',
       element: 'THUNDER(ASTRAPHOBIA) - MAGIC',
       special: '',
       weapon: 'Cyclops',
       evoStar: 3,
       evoStages: {
-        3: 'assets/images/face_nia.png',
+        3: 'assets/images/face_nia_thumb.png',
         4: 'assets/images/chara_nia.png',
         5: 'assets/img/Happy.png'
       }
@@ -336,14 +336,14 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'MBAH KARSO',
       roleTitle: 'MYSTIC SAGE & FORGER',
       mainArt: 'assets/images/chara_karso.png',
-      miniThumb: 'assets/images/face_karso.png',
+      miniThumb: 'assets/images/face_karso_thumb.png',
       role: 'DALANG',
       element: 'EARTH(TACHOPHOBIA) FIRE (PYROPHOBIA) - MAGIC',
       special: 'GENBI AMARTA DAHANA',
       weapon: 'KERIS ',
       evoStar: 3,
       evoStages: {
-        3: 'assets/images/face_karso.png',
+        3: 'assets/images/face_karso_thumb.png',
         4: 'assets/images/chara_karso.png',
         5: 'assets/img/mbah karso_20260728125825.png'
       }
@@ -431,7 +431,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (heroRoleTitleEl) heroRoleTitleEl.textContent = hero.roleTitle;
       if (heroStatRoleEl) heroStatRoleEl.textContent = hero.role;
       if (heroStatElementEl) heroStatElementEl.textContent = hero.element;
-      if (heroStatSpecialEl) heroStatSpecialEl.textContent = hero.special;
+      if (heroStatSpecialEl) heroStatSpecialEl.textContent = hero.special ? hero.special : '—';
       if (heroStatWeaponEl) heroStatWeaponEl.textContent = hero.weapon;
 
       // Update Main Art

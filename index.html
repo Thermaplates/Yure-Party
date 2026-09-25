@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -429,10 +429,11 @@
   <section class="heroes-section" id="heroes">
     <!-- Header Title -->
     <div class="heroes-header">
-      <span class="heroes-eyebrow">CHARACTER</span>
-      <h2 class="heroes-title">ALL CHARACTER</h2>
+      <span class="heroes-eyebrow">CHARACTERS</span>
+      <h2 class="heroes-title">ALL CHARACTERS</h2>
+      <div class="section-divider"></div>
       <p class="heroes-desc">
-      Character from Different Background
+        Characters from Different Backgrounds
       </p>
     </div>
 
@@ -449,11 +450,11 @@
 
         <!-- Left Nav Arrow with Previous Hero Mini Avatar -->
         <button class="hero-nav-arrow prev" id="heroPrevBtn" aria-label="Previous Hero" title="Previous Hero">
-          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="15 18 9 12 15 6"></polyline>
           </svg>
           <div class="hero-mini-preview prev" id="heroMiniPrev" title="Previous Hero">
-            <img src="assets/img/John 1 (2).png" alt="Previous Hero Mini" loading="lazy" decoding="async" />
+            <img src="assets/img/Ambatong.png" alt="Previous Hero Mini" loading="lazy" decoding="async" />
           </div>
         </button>
 
@@ -462,12 +463,13 @@
           <!-- Left Column: Name & Class/Archetype -->
           <div class="hero-identity-col">
             <h3 class="hero-name" id="heroName">NIA</h3>
-            <span class="hero-role-title" id="heroRoleTitle">GHOST MAID &amp; LEADER </span>
+            <span class="hero-role-title" id="heroRoleTitle">GHOST MAID &amp; LEADER</span>
           </div>
 
           <!-- Center Column: Character Artwork -->
           <div class="hero-art-col">
             <div class="hero-art-glow"></div>
+            <div class="hero-ground-pedestal"></div>
             <img src="assets/images/chara_nia.png" alt="Hero Artwork" class="hero-main-art" id="heroMainArt" loading="eager" decoding="async" />
           </div>
 
@@ -480,12 +482,12 @@
                 <span class="stat-value" id="heroStatRole">MENTALIST</span>
               </div>
               <div class="hero-stat-item">
-                <span class="stat-label">ELEMENT/SKILL TYPE</span>
-                <span class="stat-value" id="heroStatElement"> THUNDER(ASTRAPHOBIA) - MAGIC </span>
+                <span class="stat-label">ELEMENT / SKILL TYPE</span>
+                <span class="stat-value" id="heroStatElement">THUNDER(ASTRAPHOBIA) - MAGIC</span>
               </div>
               <div class="hero-stat-item">
                 <span class="stat-label">SPECIAL ABILITY</span>
-                <span class="stat-value" id="heroStatSpecial"></span>
+                <span class="stat-value" id="heroStatSpecial">—</span>
               </div>
               <div class="hero-stat-item">
                 <span class="stat-label">ANCHOR</span>
@@ -495,29 +497,31 @@
 
             <!-- Evolution Stage Box -->
             <div class="hero-evolution-card">
-              <span class="evolution-label">ANCHOR</span>
-              <div class="evolution-preview-box">
-                <img src="assets/images/face_nia.png" alt="Evolution Sprite" class="evolution-sprite" id="evolutionSprite" loading="lazy" decoding="async" />
-              </div>
-              <!-- Evolution Star Controls -->
-              <div class="evolution-controls">
-                <button class="evo-btn prev" id="evoPrevBtn" aria-label="Lower Evolution Stage">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3">
-                    <polyline points="15 18 9 12 15 6"></polyline>
-                  </svg>
-                </button>
-                <div class="evolution-stars" id="evolutionStars">
-                  <span class="evo-star active">✦</span>
-                  <span class="evo-star active">✦</span>
-                  <span class="evo-star active">✦</span>
-                  <span class="evo-star">✦</span>
-                  <span class="evo-star">✦</span>
+              <span class="evolution-label">EVOLUTION STAGE</span>
+              <div class="evolution-content-row">
+                <div class="evolution-preview-box">
+                  <img src="assets/images/face_nia_thumb.png" alt="Evolution Sprite" class="evolution-sprite" id="evolutionSprite" loading="lazy" decoding="async" />
                 </div>
-                <button class="evo-btn next" id="evoNextBtn" aria-label="Higher Evolution Stage">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3">
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                  </svg>
-                </button>
+                <!-- Evolution Star Controls -->
+                <div class="evolution-controls">
+                  <button class="evo-btn prev" id="evoPrevBtn" aria-label="Lower Evolution Stage">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3">
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                  </button>
+                  <div class="evolution-stars" id="evolutionStars">
+                    <span class="evo-star active">✦</span>
+                    <span class="evo-star active">✦</span>
+                    <span class="evo-star active">✦</span>
+                    <span class="evo-star">✦</span>
+                    <span class="evo-star">✦</span>
+                  </div>
+                  <button class="evo-btn next" id="evoNextBtn" aria-label="Higher Evolution Stage">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -526,9 +530,9 @@
         <!-- Right Nav Arrow with Next Hero Mini Avatar -->
         <button class="hero-nav-arrow next" id="heroNextBtn" aria-label="Next Hero" title="Next Hero">
           <div class="hero-mini-preview next" id="heroMiniNext" title="Next Hero">
-            <img src="assets/images/chara_sophia.png" alt="Next Hero Mini" loading="lazy" decoding="async" />
+            <img src="assets/images/face_sophia.png" alt="Next Hero Mini" loading="lazy" decoding="async" />
           </div>
-          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
         </button>
